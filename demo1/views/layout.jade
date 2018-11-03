@@ -4,4 +4,20 @@ html
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    block content
+      nav.header
+          ul.list
+              li.logo
+                  a(href='/') Microblog Demo
+              li
+                  a(href='/') index
+              li
+                  a(href='/login') sign in
+              li
+                  a(href='/reg') sign up
+       div.container
+           block content
+           hr
+           footer.footer
+               p
+                   a(href='https://github.com/pmlzzz') Mygithub
+                   | @2018
